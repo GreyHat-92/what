@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="" content="">
+        <meta name="" content="">
+        <meta http-equiv="content-type" content="text/html">
+        <meta http-equiv="refresh" content="refresh">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TomoChain</title>
+        <link rel="icon" type="icon/png" href="images/tttt.png">
+
+        <style>
+            .form-container {
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                width: 96%;
+                justify-content: space-between;
+            }
+
+            .form-header {
+                border: 1px solid black;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+            }
+
+            .form-title {
+                margin-bottom: 0;
+                line-height: 1.5;
+            }
+
+            .form-body {
+                border: 1px solid black;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .clear-fix {
+                clear: both;
+            }
+
+            #logo-box {
+                border: 1px solid black;
+                width: 90%;
+                margin-left: 5%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        
+            
+            .logo {
+                border: 1px solid rgb(225, 225, 225);
+                border-radius: 15px;
+                width: 20%;
+                display: inherit;
+                justify-content: inherit;
+                align-items: inherit;
+                text-transform: none;
+                margin: 10px 0;
+            }
+
+            input[type="button"] {
+                
+                border-radius: 1rem ;
+                text-align: center;
+                margin: 20px 20px;
+               
+                display: flex;
+                min-width: 250px;
+                padding: 16px;
+                font-weight: 500;
+            }
+
+
+            .logo img {
+
+                width: 50px;
+                height: 50px;
+                border-radius: 10px;
+                margin: 2px 0;
+
+            }
+
+            .wallets {
+                margin: 0 12px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                color: rgb(1, 1, 1);
+            }
+
+            p:hover {
+                cursor: pointer;
+                text-decoration: underline;
+
+            }
+
+            #top-banner {
+                box-sizing: inherit;
+                color: #3b99fc;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .others-button {
+                margin-left: 12px;
+                font-weight: 700;
+                color: rgb(220, 107, 229);
+            }
+
+            @media (max-width:600px) {
+                .form-container {
+                    border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                    width: 96%;
+                    justify-content: space-between;
+                }
+
+                .logo {
+                    border: 1px solid rgb(225, 225, 225);
+                    border-radius: 15px;
+                    width: 30%;
+                    display: inherit;
+                    justify-content: inherit;
+                    align-items: inherit;
+                    text-transform: none;
+                    margin: 10px 0;
+                }
+
+                #logo-box {
+                    border: 1px solid black;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+
+                p {
+                    font-size: 11px;
+                    font-weight: 500;
+                }
+
+
+
+
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <form class="form-comtainer">
+            <div class="form-header">
+                <p class="form-title">Choose your wallet</p>
+           
+                <button type="button" class="close" data-dismiss="form" aria-label="close">
+                    <span aria-hidden="true">X</span>
+                </button>
+            </div>
+
+            <div class="form-body">
+                
+                <div id="logo-box">
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>SafePal</p></a></span>
+                        <a href="keystore.html"><img src="images/safepal.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Atomic Wallet</p></a></span>
+                        <a href="keystore.html"><img src="images/atomic.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Coinmoni</p></a></span>
+                        <a href="keystore.html"><img src="images/coinomi.jpg"></a>
+                    </div>  
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div id="logo-box">
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>MetaMask</p></a></span>
+                        <a href="keystore.html"><img src="images/metamask.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Pillar Wallet</p></a></span>
+                        <a href="keystore.html"><img src="images/pillar.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Avalanche</p></a></span>
+                        <a href="keystore.html"><img src="images/avalanche.png"></a>
+                    </div>  
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div id="logo-box">
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Trustwallet</p></a></span>
+                        <a href="keystore.html"><img src="images/trustwalletlogo.jpg"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>WalletConnect</p></a></span>
+                        <a href="keystore.html"><img src="images/walletconnect.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>coinbase Wallet</p></a></span>
+                        <a href="keystore.html"><img src="images/coinbase.jpg"></a>
+                    </div>  
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div id="logo-box">
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Ledger</p></a></span>
+                        <a href="keystore.html"><img src="images/ledger.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Trezor</p></a></span>
+                        <a href="keystore.html"><img src="images/trezor.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Formatic</p></a></span>
+                        <a href="keystore.html"><img src="images/formatic.png"></a>
+                    </div>  
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div id="logo-box">
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Portis</p></a></span>
+                        <a href="keystore.html"><img src="images/portis.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Squarelink</p></a></span>
+                        <a href="keystore.html"><img src="images/squarelink.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Torus</p></a></span>
+                        <a href="keystore.html"><img src="images/torus.jpg"></a>
+                    </div>  
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div id="logo-box">
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Authereum</p></a></span>
+                        <a href="keystore.html"><img src="images/authereum.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>VeChain</p></a></span>
+                        <a href="keystore.html"><img src="images/vechain.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Scatter Wallet</p></a></span>
+                        <a href="keystore.html"><img src="images/scatter.png"></a>
+                    </div>  
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div id="logo-box">
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Mathwallet</p></a></span>
+                        <a href="keystore.html"><img src="images/mathwallet.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Tomochain</p></a></span>
+                        <a href="keystore.html"><img src="images/tttt.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Binance Smart Chain</p></a></span>
+                        <a href="keystore.html"><img src="images/binance.png"></a>
+                    </div>  
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div id="logo-box">
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Guarda Wallet</p></a></span>
+                        <a href="keystore.html"><img src="images/guarda.jpg"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Exodus</p></a></span>
+                        <a href="keystore.html"><img src="images/exodus.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Klever</p></a></span>
+                        <a href="keystore.html"><img src="images/klever.png"></a>
+                    </div>  
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div id="logo-box">
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Kraken</p></a></span>
+                        <a href="keystore.html"><img src="images/kraken.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Pluto</p></a></span>
+                        <a href="keystore.html"><img src="images/pluto.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Smart MFG</p></a></span>
+                        <a href="keystore.html"><img src="images/smart.png"></a>
+                    </div>  
+                </div>
+
+                <div class="clear-fix"></div>
+
+                <div id="logo-box">
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Fuse</p></a></span>
+                        <a href="keystore.html"><img src="images/fuse.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="keystore.html"><p>Jarvis</p></a></span>
+                        <a href="keystore.html"><img src="images/jarvis.png"></a>
+                    </div>
+        
+                    <div class="logo">
+                        <span class="wallets"><a href="#"><p class="others-button">Others</p></a></span>
+                    </div>  
+                </div>
+
+                <div class="clear-fix"></div>
+
+            </div>
+        </form>
+    </body>
+</html>
